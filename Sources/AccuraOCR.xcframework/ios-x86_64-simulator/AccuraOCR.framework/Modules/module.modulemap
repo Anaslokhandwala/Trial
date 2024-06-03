@@ -1,0 +1,6 @@
+framework module AccuraOCR {
+  umbrella header "AccuraOCR.h"
+  export *
+
+  module * { export * }
+}
