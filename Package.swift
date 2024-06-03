@@ -27,7 +27,8 @@ let package = Package(
         .target(
             name: "Trial",
             dependencies: [
-                "AFNetworking",
+                .target(name: "AccuraOCR"),
+                .product(name: "AFNetworking", package: "AFNetworking"),
          ]),
         .testTarget(
             name: "TrialTests",
